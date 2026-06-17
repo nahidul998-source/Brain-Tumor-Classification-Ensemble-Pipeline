@@ -3,7 +3,7 @@
 # Overview
 This project implements a comprehensive deep learning pipeline for brain tumor classification using multiple CNN architectures with ensemble methods. The pipeline includes cross-validation, individual model training, weighted voting ensembles, stacking ensembles, and Grad-CAM visualization.
 
-#Model Architectures
+# Model Architectures
 The pipeline supports six state-of-the-art CNN architectures:
 
 MobileNetV2
