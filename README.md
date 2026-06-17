@@ -49,10 +49,8 @@ Bootstrap confidence intervals (95% CI)
 McNemar statistical tests for model comparison
 
 # Usage
-Configuration
-
-python
-# Key configuration parameters
+Configuration - python
+Key configuration parameters:
 MODELS_TO_RUN = ['mobilenetv2', 'mobilenetv3', 'resnet50v2', 
                  'efficientnetb0', 'efficientnetb4', 'vgg16']
 N_SPLITS = 5
