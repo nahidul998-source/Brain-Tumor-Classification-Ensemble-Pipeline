@@ -1,6 +1,6 @@
-#Brain Tumor Classification Ensemble Pipeline
+# Brain Tumor Classification Ensemble Pipeline
 
-#Overview
+# Overview
 This project implements a comprehensive deep learning pipeline for brain tumor classification using multiple CNN architectures with ensemble methods. The pipeline includes cross-validation, individual model training, weighted voting ensembles, stacking ensembles, and Grad-CAM visualization.
 
 #Model Architectures
@@ -13,7 +13,7 @@ EfficientNetB0
 EfficientNetB4
 VGG16
 
-#Key Features
+# Key Features
 Data Pipeline
 Image Augmentation: Random flips, brightness, contrast adjustments
 Meningioma Oversampling: Targeted oversampling to address class imbalance
@@ -48,11 +48,11 @@ Per-class metrics (precision, recall, specificity, F1)
 Bootstrap confidence intervals (95% CI)
 McNemar statistical tests for model comparison
 
-#Usage
+# Usage
 Configuration
 
 python
-# Key configuration parameters (adjust as needed)
+# Key configuration parameters
 MODELS_TO_RUN = ['mobilenetv2', 'mobilenetv3', 'resnet50v2', 
                  'efficientnetb0', 'efficientnetb4', 'vgg16']
 N_SPLITS = 5
@@ -79,7 +79,7 @@ text
 ├── logs/                # Training logs (CSV)
 └── meta_learner/        # Stacking ensemble meta-learner models
 
-#Results
+# Results
 The pipeline generates comprehensive evaluation results:
 Individual Model Performance
 Train/Validation/Test accuracy, F1, precision, recall, IoU
@@ -97,7 +97,7 @@ ROC curves for each model
 Confusion matrices
 Grad-CAM++ heatmaps (individual and ensemble)
 
-#Requirements
+# Requirements
 GPU Requirements
 GPU: NVIDIA P100 or compatible (Tensor Cores not required)
 Framework: TensorFlow 2.x
@@ -148,7 +148,7 @@ Macro F1-Score: Balanced measure across all classes
 IoU/Jaccard Score: Intersection over Union
 Macro AUC: Area under ROC curve (macro-averaged)
 
-#Notes
+# Notes
 Class Imbalance: The pipeline includes meningioma oversampling and label smoothing
 
 Reproducibility: All random seeds are fixed (SEED=42)
