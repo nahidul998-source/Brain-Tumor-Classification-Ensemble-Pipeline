@@ -122,7 +122,7 @@ Cross-Validation (Optional)
 5-fold stratified CV on training data
 Validates each model architecture
 
-#Final Training
+# Final Training
 Two-phase training for each model
 Saves best weights and predictions
 Individual Evaluation
